@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nationl Parks Service API</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="index.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>National Parks Services API</h1>
+
+        <form>
+            <label for="search-state">Search State(s):</label>
+            <input type="text" name="search-state" id="js-search-state" required>
+
+            <label for="max-results">Maximum results to return</label>
+            <input type="number" name="max-results" id="js-max-results" value="10">
+
+            <input type="submit" value="Search">
+        </form>
+        <section id="results" class="results hidden">
+          <h2>Park results!</h2>
+          <ul id="results-list">
+
+          </ul>
+        </section>
+
+    </div>
+</body>
+</html>
