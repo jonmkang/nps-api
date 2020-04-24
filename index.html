@@ -13,10 +13,15 @@
         <h1>National Parks Services API</h1>
 
         <form>
-            <label for="search-state">Search State(s):</label>
-            <input type="text" name="search-state" id="js-search-state" required>
-
-            <label for="max-results">Maximum results to return</label>
+            <label for="search-by">Search by:</label>
+            <select name="search-by" id="search-by" onchange="giveExample()">
+                <option value="stateCode">State Code(s)</option>
+                <option value="q">Key Word(s)</option>
+            </select>
+                
+            <input type="text" name="search-state" id="js-search-state" required><br>
+                    
+            <label for="max-results"><br>Maximum results to return</label>
             <input type="number" name="max-results" id="js-max-results" value="10">
 
             <input type="submit" value="Search">
